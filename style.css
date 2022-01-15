@@ -245,8 +245,9 @@ footer i {
 
 /* media query start  */
 
-@media only screen and (max-width: 688px) {
+@media (min-width: 320px) and (max-width: 575px) {
   .container {
+    width: 100%;
     display: inline;
   }
   .companyname {
@@ -257,14 +258,21 @@ footer i {
     margin-bottom: 50px;
   }
   .links a {
+    width: 100%;
+    border: none;
+    overflow: hidden;
     text-align: center;
   }
   .intro-pic img {
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-right: 30px;
+    text-align: center;
   }
   .popurlar_content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
   }
 }
