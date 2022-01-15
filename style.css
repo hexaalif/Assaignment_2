@@ -242,3 +242,29 @@ footer i {
   margin-top: 15px;
 }
 /* footer part end  */
+
+/* media query start  */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    display: inline;
+  }
+  .companyname {
+    text-align: center;
+  }
+  .intro {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .links a {
+    text-align: center;
+  }
+  .intro-pic img {
+    width: 300px;
+  }
+  .popurlar_content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
